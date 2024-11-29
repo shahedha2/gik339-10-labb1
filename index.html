@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1 - Grupp 10</title>
+    <title>Labb 1 - Grupp 20</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Lab 1 - Grupp 10</h1>
-        <form>
-            <!-- Input 1 -->
-            <label for="color">Färg:</label>
-            <input type="text" id="color" name="color" class="textfield" placeholder="">
+    <div class="form-container">
+        <h1>Labb 1 - Grupp 20</h1>
 
-            <!-- Input 2 -->
-            <label for="content">Innehåll:</label>
-            <input type="text" id="content" name="content" class="textfield" placeholder="">
+        <!-- Input för färg -->
+        <div class="form-group">
+            <label for="color">Färg</label>
+            <input type="color" id="color" name="color" class="textfield">
+        </div>
 
-            <!-- Input 3 (Checkbox) -->
-            <label for="checkbox">
-                <input type="checkbox" id="checkbox" name="divStyle" class="checkbox">
-                Ställ på box
-            </label>
+        <!-- Input för text -->
+        <div class="form-group">
+            <label for="content">Innehåll</label>
+            <input type="text" id="content" name="content" class="textfield">
+        </div>
 
-            <!-- Button -->
-            <button type="button" id="actionButton" class="button">Ta bort</button>
+        <!-- Checkbox -->
+        <div class="form-group">
+            <input type="checkbox" id="box-style" name="box-style" class="checkbox">
+            <label for="box-style" class="checkbox-label">Stil på box</label>
+        </div>
 
-            <!-- Div -->
-            <div id="emptyDiv" class="divStyle">Div som egentligen ska vara tom</div>
-        </form>
+        <!-- Knapp -->
+        <button id="submit-button" class="button">Ta bort</button>
+
+        <!-- Tom div -->
+        <div id="empty-div" class="empty-div">Div som egentligen ska vara tom</div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
