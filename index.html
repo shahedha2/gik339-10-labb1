@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab 1 - Grupp 10</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Lab 1 - Grupp 10</h1>
+        <form>
+            <!-- Input 1 -->
+            <label for="color">Färg:</label>
+            <input type="text" id="color" name="color" class="textfield" placeholder="">
+
+            <!-- Input 2 -->
+            <label for="content">Innehåll:</label>
+            <input type="text" id="content" name="content" class="textfield" placeholder="">
+
+            <!-- Input 3 (Checkbox) -->
+            <label for="checkbox">
+                <input type="checkbox" id="checkbox" name="divStyle" class="checkbox">
+                Ställ på box
+            </label>
+
+            <!-- Button -->
+            <button type="button" id="actionButton" class="button">Ta bort</button>
+
+            <!-- Div -->
+            <div id="emptyDiv" class="divStyle">Div som egentligen ska vara tom</div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
